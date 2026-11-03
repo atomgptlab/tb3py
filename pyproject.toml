@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tb3py"
-version = "0.1.0"
+version = "2026.11.3"
 description = "A Python wrapper around ThreeBodyTB.jl, Julia scientific library for tight binding calculations"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -12,3 +12,9 @@ dependencies = [
     "juliacall>=0.9.0",
     "juliapkg>=0.1.0",
 ]
+
+[tool.setuptools]
+packages = ["tb3py"]
+
+[tool.setuptools.package-data]
+tb3py = ["juliapkg.json"]

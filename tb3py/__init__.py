@@ -1,3 +1,5 @@
+__version__ = "2026.11.3"
+
 from juliacall import Main as jl
 
 # 1. Bring the Julia scientific library into scope
